@@ -8,12 +8,16 @@
     "build": "vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "sass-dev": "sass --watch --update --style=expanded src/scss/style.scss:src/dist/style.css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss/style.scss:src/dist/style.css",
+    "ucla-design-system-deps": "cd node_modules/ucla-design-systems && npm i && cd ../../"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^9.0.0-alpha.20",
     "@storybook/html": "^9.0.0-alpha.20",
     "@storybook/html-vite": "^9.0.0-alpha.20",
+    "sass": "^1.86.3",
     "storybook": "^9.0.0-alpha.20",
     "vite": "^6.3.1"
   },
@@ -65,6 +69,7 @@
   },
   "dependencies": {
     "@storybook/manager-api": "^8.6.12",
-    "@storybook/theming": "^8.6.12"
+    "@storybook/theming": "^8.6.12",
+    "ucla-design-systems": "^2.4.3"
   }
 }

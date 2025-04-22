@@ -1,0 +1,10 @@
+// Forward styles from ucla-design-systems node module.
+// May require running `yarn ucla-design-system-deps` to get dependencies before compiling sass.
+@forward '../../node_modules/ucla-design-systems/scss/utilities';
+@forward '../../node_modules/ucla-design-systems/scss/layout';
+@forward '../../node_modules/ucla-design-systems/scss/components';
+
+// Forward SiteDen specific styling.
+@forward  'content';
+
+// Hacks.

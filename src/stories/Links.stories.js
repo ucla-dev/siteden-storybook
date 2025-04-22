@@ -1,5 +1,5 @@
 export default {
-  title: 'Basics/Typography'
+  title: 'Content'
 };
 
 export const Links = () => `

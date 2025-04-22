@@ -1,4 +1,6 @@
 /** @type { import('@storybook/html-vite').Preview } */
+import '../src/dist/style.css';
+
 const preview = {
   parameters: {
     controls: {
@@ -9,7 +11,7 @@ const preview = {
     },
     options: {
       storySort: {
-        order: ['Basics', 'Components', 'Sections', 'Pages'],
+        order: ['Content', 'Components', 'Sections', 'Pages'],
       },
     },
   },
