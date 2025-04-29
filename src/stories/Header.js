@@ -2,46 +2,181 @@ import { createButton } from './Button';
 import './header.css';
 
 export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
+  // Create the header.
   const header = document.createElement('header');
+  header.className = 'ucla-header ucla-header--college';
 
-  const wrapper = document.createElement('div');
-  wrapper.className = 'storybook-header';
+  // Create the logo container.
+  const logoContainer = document.createElement('div');
+  logoContainer.className = 'ucla-header__logo-container';
 
-  const logo = `<div>
-    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fillRule="evenodd">
-        <path
-          d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-          fill="#FFF" />
-        <path
-          d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-          fill="#555AB9" />
-        <path d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z" fill="#91BAF8" />
-      </g>
-    </svg>
-    <h1>Acme</h1>
-  </div>`;
+  // Create the header container.
+  const headerContainer = document.createElement('div');
+  headerContainer.className = 'ucla-header__container';
+  headerContainer.id = 'header-wrap';
 
-  wrapper.insertAdjacentHTML('afterbegin', logo);
+  // Create the main menu.
+  const mainMenu = document.createElement('nav');
+  mainMenu.className = 'ucla-main-nav';
+  mainMenu.id = 'nav-main';
+  mainMenu.ariaLabel = 'Main Menu';
 
-  const account = document.createElement('div');
-  if (user) {
-    const welcomeMessage = `<span class="welcome">Welcome, <b>${user.name}</b>!</span>`;
-    account.innerHTML = welcomeMessage;
-    account.appendChild(createButton({ size: 'small', label: 'Log out', onClick: onLogout }));
-  } else {
-    account.appendChild(createButton({ size: 'small', label: 'Log in', onClick: onLogin }));
-    account.appendChild(
-      createButton({
-        size: 'small',
-        label: 'Sign up',
-        onClick: onCreateAccount,
-        primary: true,
-      })
-    );
-  }
-  wrapper.appendChild(account);
-  header.appendChild(wrapper);
+  // Create secondary menu.
+  const secondaryMenu = document.createElement('nav');
+  secondaryMenu.className = 'ucla-secondary-nav';
+  secondaryMenu.id = 'nav-second';
+  secondaryMenu.ariaLabel = 'Secondary Menu';
+
+  // Create mobile menu button.
+  const mobileNavButton = document.createElement('button');
+  mobileNavButton.className = 'hamburger';
+  mobileNavButton.type = 'button';
+  mobileNavButton.id = 'primary-ham';
+  mobileNavButton.ariaControls = 'nav-main';
+  mobileNavButton.ariaExpanded = 'false';
+  mobileNavButton.alt = 'navigation and search';
+
+  const logo = `
+  <div class="ucla-header__logo">
+    <a href="https://www.ucla.edu/">
+      <img
+        class="ucla-header__logo-image"
+        src="https://www.ucla.edu/img/logo-ucla.svg"
+        alt="UCLA"
+      />
+    </a>
+  </div>
+  `;
+
+  const siteName = `
+  <div class="ucla-header__site-name">
+    <a href="#" title="Department Name" rel="home">Department Name</a>
+  </div>
+  `;
+
+  const secondaryMenuItems = `
+  <ul class="ucla-secondary-nav__list">
+    <li class="ucla-secondary-nav__item">
+      <a class="ucla-secondary-nav__link" href="#">Nav Item</a>
+    </li>
+    <li class="ucla-secondary-nav__item">
+      <a class="ucla-secondary-nav__link" href="#">Nav Item</a>
+    </li>
+    <li class="ucla-secondary-nav__item">
+      <a class="ucla-secondary-nav__link ucla-secondary-nav__link--active" href="#">Nav Item</a>
+    </li>
+  </ul>
+  `;
+
+  const primaryMenuItems = `
+  <ul>
+    <li>
+      <a href="#">Parent Item</a> Arrow Down
+      <ul>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Parent Item</a> Arrow Down
+      <ul>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a> Arrow Down
+          <ul>
+            <li>
+              <a href="#">Nav Item</a>
+            </li>
+            <li>
+              <a href="#">Nav Item</a> Arrow Down
+              <ul>
+                <li>
+                  <a href="#">Nav Item</a>
+                </li>
+                <li>
+                  <a href="#">Nav Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Parent Item</a> Arrow Down
+      <ul>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Parent Item</a> Arrow Down
+      <ul>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Parent Item</a> Arrow Down
+      <ul>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+        <li>
+          <a href="#">Nav Item</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  `;
+
+  const hamburger = `
+  <span class="hamburger__box">
+    <span class="hamburger__inner"></span>
+  </span>
+  `;
+
+  // Add the containers to the header.
+  header.appendChild(logoContainer);
+  header.appendChild(headerContainer);
+
+  // Add the logo to it's container.
+  logoContainer.insertAdjacentHTML('afterbegin', logo);
+
+
+  // Add site name to header container.
+  headerContainer.insertAdjacentHTML('afterbegin', siteName);
+
+  // Add the secondary menu to the header container.
 
   return header;
 };

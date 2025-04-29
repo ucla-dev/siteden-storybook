@@ -1,4 +1,4 @@
-import { createHeader } from './Header';
+import { createHeader } from './ExampleHeader';
 import './page.css';
 
 export const createPage = () => {
