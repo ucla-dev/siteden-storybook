@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "sass-dev": "sass --watch --update --style=expanded src/scss/style.scss:src/dist/style.css",
-    "sass-prod": "sass --no-source-map --style=compressed src/scss/style.scss:src/dist/style.css",
+    "sass-dev": "sass --watch --update --style=expanded src/scss/style.scss:src/scss/style.css",
     "ucla-design-system-deps": "cd node_modules/ucla-design-systems && npm i && cd ../../"
   },
   "devDependencies": {
