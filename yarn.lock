@@ -8828,9 +8828,9 @@ statuses@~1.4.0:
   integrity sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==
 
 storybook-addon-pseudo-states@9.0.0-alpha.20:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-4.0.3.tgz#7c24d84cb3dbcc42813c633ba6f77a1ce5940baa"
-  integrity sha512-QppSJsRK0oWeTtVHJKxSCxGwyh1r6vMBxgCWFgUffFA+NOwVvfsBhi9A7xKI2z/0fmweiqSZhBafRIAMlT6X5Q==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/storybook-addon-pseudo-states/-/storybook-addon-pseudo-states-4.0.4.tgz#d2327427960dce236be2714a3af2ab9f34d7ce2a"
+  integrity sha512-hF3nLFpRPjqNxa7eqp+j1bd+DvyUCns1iesUZqMZz9ZuIijosOTQgJO5G0drbdxlHvXehu/BgcqbyxBb2eJR5w==
   dependencies:
     "@storybook/icons" "^1.2.10"
 

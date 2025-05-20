@@ -41,4 +41,5 @@
   <li>CSS Lint</li>
   <li>JS Lint</li>
   <li>Decide if we need a sass production build script since vite can do a production build<pre>"sass-prod": "sass --no-source-map --style=compressed src/scss/style.scss:src/dist/style.css"</pre></li>
+  <li>Have temporarily moved icons folder from design system node module to /public folder. Will need to sym-link or create a build script that migrates these on Storybook build. This is not a long term solution to have to copy paste those files.</li>
 </ul>
