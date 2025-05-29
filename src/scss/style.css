@@ -2306,7 +2306,7 @@ hr {
 }
 
 /**
- * Swiper 11.2.6
+ * Swiper 11.2.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -2314,7 +2314,7 @@ hr {
  *
  * Released under the MIT License
  *
- * Released on: March 19, 2025
+ * Released on: May 19, 2025
  */
 @font-face {
   font-family: "swiper-icons";
@@ -6384,6 +6384,72 @@ a.ucla-link__has-icon::after {
 .heading-ribbon--ucla-gold a:hover {
   color: #333;
   text-decoration: none;
+}
+
+:root {
+  --icon-external-link: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="%2300598C" d="M16 16L2 16L2 2L9 2V0L2 0C0.89 0 0 0.9 0 2L0 16C0 17.1 0.89 18 2 18L16 18C17.1 18 18 17.1 18 16L18 9L16 9V16ZM11 0V2L14.59 2L4.76 11.83L6.17 13.24L16 3.41L16 7H18V0L11 0Z"></path></svg>');
+  --icon-internal-link: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%2300598C" d="M12 20L10.575 18.6L16.175 13L4 13L4 11L16.175 11L10.575 5.4L12 4L20 12L12 20Z"/></svg>');
+}
+
+.list--bullet {
+  list-style-type: square;
+}
+.list--bullet li::marker {
+  color: #2774ae;
+}
+.list--pipe {
+  margin: 0 0 1rem 0;
+}
+.list--pipe :where(li) {
+  border-right: 1px solid #999;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 0.75rem;
+  padding-right: 0.5rem;
+  margin-top: 0;
+}
+.list--pipe :where(li):last-child {
+  border: 0;
+}
+.list--link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list--link li + li {
+  margin: 0;
+}
+.list--link li a {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: bold;
+  color: #00598c;
+  cursor: pointer;
+}
+.list--link li a:visited {
+  color: #00598c;
+}
+.list--link li:hover a {
+  background-color: #0079bf;
+  color: #fff;
+}
+.list--link li:first-child a {
+  border-top: 1px solid #e0e0e0;
+}
+.list--link-indicator li a:after {
+  content: "";
+  background: var(--icon-internal-link) no-repeat;
+  padding-right: 1.5rem;
+  height: 1.3rem;
+}
+.list--link-indicator li a[href^=http]:after {
+  background: var(--icon-external-link) no-repeat;
+}
+.list--link-indicator li:hover a:after {
+  filter: brightness(0) invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */
