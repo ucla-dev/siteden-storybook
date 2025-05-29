@@ -6397,6 +6397,9 @@ a.ucla-link__has-icon::after {
 .list--bullet li::marker {
   color: #2774ae;
 }
+.list--bullet ul {
+  list-style-type: square;
+}
 .list--pipe {
   margin: 0 0 1rem 0;
 }
@@ -6420,7 +6423,7 @@ a.ucla-link__has-icon::after {
   margin: 0;
 }
 .list--link li a {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e5e5e5;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -6437,7 +6440,7 @@ a.ucla-link__has-icon::after {
   color: #fff;
 }
 .list--link li:first-child a {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e5e5e5;
 }
 .list--link-indicator li a:after {
   content: "";
@@ -6450,6 +6453,84 @@ a.ucla-link__has-icon::after {
 }
 .list--link-indicator li:hover a:after {
   filter: brightness(0) invert(1);
+}
+.list--flush {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list--flush li + li {
+  margin: 0;
+}
+.list--flush li,
+.list--flush li + li {
+  margin-bottom: 1rem;
+}
+.list--lower-alpha {
+  list-style-type: lower-alpha;
+}
+.list--lower-alpha :where(li)::marker {
+  color: #2774ae;
+}
+.list--lower-alpha:not([type]) {
+  list-style-type: lower-alpha;
+}
+.list--lower-alpha:not([type]) :where(ol):not([type]) {
+  list-style-type: lower-alpha;
+}
+.list--upper-alpha {
+  list-style-type: upper-alpha;
+}
+.list--upper-alpha :where(li)::marker {
+  color: #2774ae;
+}
+.list--upper-alpha:not([type]) {
+  list-style-type: upper-alpha;
+}
+.list--upper-alpha:not([type]) :where(ol):not([type]) {
+  list-style-type: upper-alpha;
+}
+.list--lower-roman {
+  list-style-type: lower-roman;
+}
+.list--lower-roman :where(li)::marker {
+  color: #2774ae;
+}
+.list--lower-roman:not([type]) {
+  list-style-type: lower-roman;
+}
+.list--lower-roman:not([type]) :where(ol):not([type]) {
+  list-style-type: lower-roman;
+}
+.list--upper-roman {
+  list-style-type: upper-roman;
+}
+.list--upper-roman :where(li)::marker {
+  color: #2774ae;
+}
+.list--upper-roman:not([type]) {
+  list-style-type: upper-roman;
+}
+.list--upper-roman:not([type]) :where(ol):not([type]) {
+  list-style-type: upper-roman;
+}
+.list--alpha-numeric-roman {
+  list-style-type: upper-alpha;
+}
+.list--alpha-numeric-roman :where(li)::marker {
+  color: #2774ae;
+}
+.list--alpha-numeric-roman:not([type]) {
+  list-style-type: upper-alpha;
+}
+.list--alpha-numeric-roman:not([type]) :where(ol):not([type]) {
+  list-style-type: decimal;
+}
+.list--alpha-numeric-roman:not([type]) :where(ol):not([type]) :where(ol):not([type]) {
+  list-style-type: lower-alpha;
+}
+.list--alpha-numeric-roman:not([type]) :where(ol):not([type]) :where(ol):not([type]) :where(ol):not([type]) {
+  list-style-type: lower-roman;
 }
 
 /*# sourceMappingURL=style.css.map */

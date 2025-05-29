@@ -10,6 +10,10 @@ export const createLists = ({
   const descriptiveList = document.createElement('dl');
   const unorderedListNested = document.createElement('ul')
   const orderedListNested = document.createElement('ol')
+  const unorderedListNestedDeep = document.createElement('ul')
+  const orderedListNestedDeep = document.createElement('ol')
+  const unorderedListNestedDeeper = document.createElement('ul')
+  const orderedListNestedDeeper = document.createElement('ol')
   let classList = '';
 
   // Build class list.
@@ -42,14 +46,21 @@ export const createLists = ({
         // From design system.
         classList += 'ucla-list__plain ';
         break;
+      case 'Flush List':
+        // From design system.
+        classList += 'list--flush ';
+        break;
+      case 'Lower Alpha List':
+        classList += 'list--lower-alpha ';
+        break;
       case 'Upper Alpha List':
         classList += 'list--upper-alpha ';
         break;
       case 'Lower Roman List':
         classList += 'list--lower-roman ';
         break;
-      case 'Lower Alpha List':
-        classList += 'list--lower-alpha ';
+      case 'Upper Roman List':
+        classList += 'list--upper-roman ';
         break;
       case 'Alpha Numeric Roman List':
         classList += 'list--alpha-numeric-roman ';
@@ -62,11 +73,42 @@ export const createLists = ({
     const li = document.createElement('li');
     li.innerText = 'Lorem ipsum dolar sit amet.';
     if (type == 'Unordered List') {
+      unorderedListNestedDeeper.append(li);
+    } else {
+      orderedListNestedDeeper.append(li);
+    }
+  }
+  for (let i = 0; i < 3; i++) {
+    const li = document.createElement('li');
+    li.innerText = 'Lorem ipsum dolar sit amet.';
+    if (type == 'Unordered List') {
+      if (nested == true && i == 1) {
+        li.append(unorderedListNestedDeeper);
+      }
+      unorderedListNestedDeep.append(li);
+    } else {
+      if (nested == true && i == 1) {
+        li.append(orderedListNestedDeeper);
+      }
+      orderedListNestedDeep.append(li);
+    }
+  }
+  for (let i = 0; i < 3; i++) {
+    const li = document.createElement('li');
+    li.innerText = 'Lorem ipsum dolar sit amet.';
+    if (type == 'Unordered List') {
+      if (nested == true && i == 1) {
+        li.append(unorderedListNestedDeep);
+      }
       unorderedListNested.append(li);
     } else {
+      if (nested == true && i == 1) {
+        li.append(orderedListNestedDeep);
+      }
       orderedListNested.append(li);
     }
   }
+
 
   // Return Appropriate List.
   if (type == 'Unordered List') {

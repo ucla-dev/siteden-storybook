@@ -17,7 +17,7 @@ export default {
     indicator: { control: 'boolean' },
     style: {
       control: { type: 'select' },
-      options: ['-none-', 'Bullet List', 'Inline List', 'Pipe List', 'Link List', 'Icon Link List', 'Plain List', 'Upper Alpha List', 'Lower Roman List', 'Lower Alpha List', 'Alpha Numeric Roman List'],
+      options: ['-none-', 'Bullet List', 'Inline List', 'Pipe List', 'Link List', 'Icon Link List', 'Plain List', 'Flush List', 'Lower Alpha List', 'Upper Alpha List', 'Lower Roman List', 'Upper Roman List', 'Alpha Numeric Roman List'],
     },
   }
 };
@@ -106,5 +106,75 @@ export const externalLinkList = {
     external: true,
     style: 'Icon Link List',
     indicator: true,
+  },
+};
+
+export const plainList = {
+  args: {
+    type: 'Unordered List',
+    nested: false,
+    external: false,
+    style: 'Plain List',
+    indicator: false,
+  },
+};
+
+export const flushList = {
+  args: {
+    type: 'Unordered List',
+    nested: false,
+    external: false,
+    style: 'Flush List',
+    indicator: false,
+  },
+};
+
+export const lowerAlphaList = {
+  args: {
+    type: 'Ordered List',
+    nested: true,
+    external: false,
+    style: 'Lower Alpha List',
+    indicator: false,
+  },
+};
+
+export const upperAlphaList = {
+  args: {
+    type: 'Ordered List',
+    nested: true,
+    external: false,
+    style: 'Upper Alpha List',
+    indicator: false,
+  },
+};
+
+export const lowerRomanList = {
+  args: {
+    type: 'Ordered List',
+    nested: true,
+    external: false,
+    style: 'Lower Roman List',
+    indicator: false,
+  },
+};
+
+export const upperRomanList = {
+  args: {
+    type: 'Ordered List',
+    nested: true,
+    external: false,
+    style: 'Upper Roman List',
+    indicator: false,
+  },
+};
+
+export const alphaNumericRomanList = {
+  args: {
+    type: 'Ordered List',
+    nested: true,
+    external: false,
+    style: 'Alpha Numeric Roman List',
+    indicator: false,
   },
 };
