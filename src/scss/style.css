@@ -6347,6 +6347,10 @@ a.ucla-link__has-icon::after {
   }
 }
 
+b {
+  font-weight: bold;
+}
+
 .heading-bar {
   border-left: 0.65rem solid #ffd100;
   margin-bottom: 1.5rem;
