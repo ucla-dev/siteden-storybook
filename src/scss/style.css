@@ -6352,9 +6352,9 @@ b {
 }
 
 .heading-bar {
-  border-left: 0.65rem solid #ffd100;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
+  border-left: 0.65rem solid #ffd100;
 }
 .heading-bar a {
   color: #333;
@@ -6366,10 +6366,10 @@ b {
 }
 .heading-ribbon {
   display: table;
-  color: #fff;
-  background-color: #2774ae;
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
+  background-color: #2774ae;
+  color: #fff;
 }
 .heading-ribbon a {
   color: #fff;
@@ -6379,8 +6379,8 @@ b {
   text-decoration: none;
 }
 .heading-ribbon--ucla-gold {
-  color: #333;
   background-color: #ffd100;
+  color: #333;
 }
 .heading-ribbon--ucla-gold a {
   color: #333;
@@ -6405,36 +6405,36 @@ b {
   list-style-type: square;
 }
 .list--pipe {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
 }
 .list--pipe :where(li) {
-  border-right: 1px solid #999;
   display: inline-block;
-  line-height: 1;
+  margin-top: 0;
   margin-right: 0.75rem;
   padding-right: 0.5rem;
-  margin-top: 0;
+  border-right: 1px solid #999;
+  line-height: 1;
 }
 .list--pipe :where(li):last-child {
   border: 0;
 }
 .list--link {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .list--link li + li {
   margin: 0;
 }
 .list--link li a {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
   color: #00598c;
   cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
 }
 .list--link li a:visited {
   color: #00598c;
@@ -6447,10 +6447,10 @@ b {
   border-top: 1px solid #e5e5e5;
 }
 .list--link-indicator li a:after {
-  content: "";
-  background: var(--icon-internal-link) no-repeat;
-  padding-right: 1.5rem;
   height: 1.3rem;
+  padding-right: 1.5rem;
+  background: var(--icon-internal-link) no-repeat;
+  content: "";
 }
 .list--link-indicator li a[href^=http]:after {
   background: var(--icon-external-link) no-repeat;
@@ -6459,9 +6459,9 @@ b {
   filter: brightness(0) invert(1);
 }
 .list--flush {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .list--flush li + li {
   margin: 0;
@@ -6532,6 +6532,8 @@ b {
 }
 .list--alpha-numeric-roman:not([type]) :where(ol):not([type]) :where(ol):not([type]) {
   list-style-type: lower-alpha;
+  /* stylelint-disable */
+  /* stylelint-enable */
 }
 .list--alpha-numeric-roman:not([type]) :where(ol):not([type]) :where(ol):not([type]) :where(ol):not([type]) {
   list-style-type: lower-roman;

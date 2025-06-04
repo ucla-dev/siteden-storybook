@@ -10,7 +10,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "sass-dev": "sass --watch --update --style=expanded src/scss/style.scss:src/scss/style.css",
-    "ucla-design-system-deps": "cd node_modules/ucla-design-systems && npm i && cd ../../"
+    "ucla-design-system-deps": "cd node_modules/ucla-design-systems && npm i && cd ../../",
+    "sass-lint": "stylelint \"src/scss/**/*.scss\"",
+    "sass-lint:fix": "stylelint \"src/scss/**/*.scss\" --fix"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^9.0.0-alpha.20",

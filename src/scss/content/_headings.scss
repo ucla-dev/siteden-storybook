@@ -1,11 +1,11 @@
-@use '../../../node_modules/ucla-design-systems/scss/utilities/variables' as design-system-vars;
+@use "../../../node_modules/ucla-design-systems/scss/utilities/variables" as design-system-vars;
 
 .heading {
 
   &-bar {
-    border-left: .65rem solid design-system-vars.$ucla-gold;
     margin-bottom: 1.5rem;
     padding-left: 1rem;
+    border-left: .65rem solid design-system-vars.$ucla-gold;
 
     a {
       color: design-system-vars.$grey-80;
@@ -20,10 +20,10 @@
 
   &-ribbon {
     display: table; // I know this seems weird, but allows for `inline-block` type styling with `block` type line return.
-    color: design-system-vars.$white;
-    background-color: design-system-vars.$ucla-blue;
     margin-bottom: .5rem;
     padding: .5rem 1rem;
+    background-color: design-system-vars.$ucla-blue;
+    color: design-system-vars.$white;
 
     a {
       color: design-system-vars.$white;
@@ -35,8 +35,8 @@
     }
 
     &--ucla-gold {
-      color: design-system-vars.$grey-80;
       background-color: design-system-vars.$ucla-gold;
+      color: design-system-vars.$grey-80;
 
       a {
           color: design-system-vars.$grey-80;

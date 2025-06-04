@@ -1,4 +1,4 @@
-@use '../../../node_modules/ucla-design-systems/scss/utilities/variables' as design-system-vars;
+@use "../../../node_modules/ucla-design-systems/scss/utilities/variables" as design-system-vars;
 
 // CSS Var(s).
 :root {
@@ -21,9 +21,9 @@
 
 // List Reset.
 @mixin listReset() {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 
   li + li {
     margin: 0
@@ -42,15 +42,15 @@
   }
 
   &--pipe {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 
     :where(li) {
-      border-right: 1px solid design-system-vars.$grey-40;
       display: inline-block;
-      line-height: 1;
+      margin-top: 0;
       margin-right: .75rem;
       padding-right: .5rem;
-      margin-top: 0;
+      border-right: 1px solid design-system-vars.$grey-40;
+      line-height: 1;
 
       &:last-child {
         border: 0;
@@ -64,14 +64,14 @@
     li {
 
       a {
-        border-bottom: 1px solid design-system-vars.$grey-10;
-        padding: 1rem;
         display: flex;
         justify-content: space-between;
-        text-decoration: none;
-        font-weight: bold;
+        padding: 1rem;
+        border-bottom: 1px solid design-system-vars.$grey-10;
         color: design-system-vars.$default-state;
         cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
 
         &:visited {
           color: design-system-vars.$default-state;
@@ -96,10 +96,10 @@
 
       a {
         &:after {
-          content: '';
-          background: var(--icon-internal-link) no-repeat;
-          padding-right: 1.5rem;
           height: 1.3rem;
+          padding-right: 1.5rem;
+          background: var(--icon-internal-link) no-repeat;
+          content: "";
         }
 
         &[href^="http"]:after {

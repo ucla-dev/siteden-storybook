@@ -6,8 +6,8 @@ export default {
     "@stylistic/stylelint-plugin"
 	],
   "rules": {
-    // "@stylistic/number-leading-zero": "never",
-    // "@stylistic/string-quotes": "double",
+    "@stylistic/number-leading-zero": "never",
+    "@stylistic/string-quotes": "double",
     "function-calc-no-unspaced-operator": null,
     "shorthand-property-no-redundant-values": true,
     "declaration-block-no-duplicate-properties": true,
