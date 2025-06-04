@@ -1,0 +1,118 @@
+@use '../../../node_modules/ucla-design-systems/scss/utilities/variables' as design-system-vars;
+
+.ucla-text-color {
+  &-darkest-blue {
+    color: design-system-vars.$darkest-blue !important;
+  }
+
+  &-darker-blue {
+    color: design-system-vars.$darker-blue !important;
+  }
+
+  &-lightest-blue {
+    color: design-system-vars.$lightest-blue !important;
+  }
+
+  &-darker-gold {
+    color: design-system-vars.$darker-gold !important;
+  }
+
+  &-darkest-gold {
+    color: design-system-vars.$darkest-gold !important;
+  }
+
+  &-grey-80 {
+    color: design-system-vars.$grey-80 !important;
+  }
+}
+
+.ucla-has-background {
+  &-darkest-blue {
+    background-color: design-system-vars.$darkest-blue !important;
+    color: design-system-vars.$white;
+  }
+
+  &-darker-blue {
+    background-color: design-system-vars.$darker-blue !important;
+    color: design-system-vars.$white;
+  }
+
+  &-lighter-blue {
+    background-color: design-system-vars.$lighter-blue !important;
+    color: design-system-vars.$black;
+  }
+
+  &-lightest-blue {
+    background-color: design-system-vars.$lightest-blue !important;
+    color: design-system-vars.$black;
+  }
+
+  &-darker-gold {
+    background-color: design-system-vars.$darker-gold !important;
+    color: design-system-vars.$black;
+  }
+
+  &-darkest-gold {
+    background-color: design-system-vars.$darkest-gold !important;
+    color: design-system-vars.$black;
+  }
+
+  &-interactive-default-state {
+    background-color: design-system-vars.$default-state !important;
+    color: design-system-vars.$white;
+  }
+
+  &-interactive-hover-state {
+    background-color: design-system-vars.$hover-state !important;
+    color: design-system-vars.$white;
+  }
+
+  &-interactive-active-state {
+    background-color: design-system-vars.$active-state !important;
+    color: design-system-vars.$white;
+  }
+
+  &-interactive-focus-state {
+    background-color: design-system-vars.$focus-state !important;
+    color: design-system-vars.$white;
+  }
+
+  &-interactive-visited-state {
+    background-color: design-system-vars.$visited-state !important;
+    color: design-system-vars.$white;
+  }
+
+  &-interactive-disabled-state {
+    background-color: design-system-vars.$disabled-state !important;
+    color: design-system-vars.$black;
+  }
+
+  &-interactive-default-state-light {
+    background-color: design-system-vars.$default-state-light !important;
+  }
+
+  &-interactive-hover-state-light {
+    background-color: design-system-vars.$hover-state-light !important;
+  }
+
+  &-interactive-active-state-light {
+    background-color: design-system-vars.$active-state-light !important;
+  }
+
+  &-interactive-focus-state-light {
+    background-color: design-system-vars.$focus-state-light !important;
+  }
+
+  &-interactive-visited-state-light {
+    background-color: design-system-vars.$visited-state-light !important;
+  }
+
+  &-interactive-disabled-state-light {
+    background-color: design-system-vars.$disabled-state-light !important;
+  }
+
+  &-info-secondary {
+    background-color: design-system-vars.$grey-40 !important;
+    color: design-system-vars.$black;
+  }
+}

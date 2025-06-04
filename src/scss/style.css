@@ -6537,4 +6537,94 @@ b {
   list-style-type: lower-roman;
 }
 
+.ucla-text-color-darkest-blue {
+  color: #003b5c !important;
+}
+.ucla-text-color-darker-blue {
+  color: #005587 !important;
+}
+.ucla-text-color-lightest-blue {
+  color: #daebfe !important;
+}
+.ucla-text-color-darker-gold {
+  color: #ffc72c !important;
+}
+.ucla-text-color-darkest-gold {
+  color: #ffb81c !important;
+}
+.ucla-text-color-grey-80 {
+  color: #333 !important;
+}
+
+.ucla-has-background-darkest-blue {
+  background-color: #003b5c !important;
+  color: #fff;
+}
+.ucla-has-background-darker-blue {
+  background-color: #005587 !important;
+  color: #fff;
+}
+.ucla-has-background-lighter-blue {
+  background-color: #8bb8e8 !important;
+  color: #000;
+}
+.ucla-has-background-lightest-blue {
+  background-color: #daebfe !important;
+  color: #000;
+}
+.ucla-has-background-darker-gold {
+  background-color: #ffc72c !important;
+  color: #000;
+}
+.ucla-has-background-darkest-gold {
+  background-color: #ffb81c !important;
+  color: #000;
+}
+.ucla-has-background-interactive-default-state {
+  background-color: #00598c !important;
+  color: #fff;
+}
+.ucla-has-background-interactive-hover-state {
+  background-color: #0079bf !important;
+  color: #fff;
+}
+.ucla-has-background-interactive-active-state {
+  background-color: #003b5c !important;
+  color: #fff;
+}
+.ucla-has-background-interactive-focus-state {
+  background-color: #00568c !important;
+  color: #fff;
+}
+.ucla-has-background-interactive-visited-state {
+  background-color: #5223b0 !important;
+  color: #fff;
+}
+.ucla-has-background-interactive-disabled-state {
+  background-color: #999 !important;
+  color: #000;
+}
+.ucla-has-background-interactive-default-state-light {
+  background-color: #ffd100 !important;
+}
+.ucla-has-background-interactive-hover-state-light {
+  background-color: #ffe500 !important;
+}
+.ucla-has-background-interactive-active-state-light {
+  background-color: #ffbf0f !important;
+}
+.ucla-has-background-interactive-focus-state-light {
+  background-color: #ffe500 !important;
+}
+.ucla-has-background-interactive-visited-state-light {
+  background-color: #fff !important;
+}
+.ucla-has-background-interactive-disabled-state-light {
+  background-color: #e5e5e5 !important;
+}
+.ucla-has-background-info-secondary {
+  background-color: #999 !important;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
