@@ -204,9 +204,12 @@
         :where(ol):not([type]) {
           list-style-type: lower-alpha;
 
+          /* stylelint-disable */
+          // Allow nesting depth greater than 4 in this one instance.
           :where(ol):not([type]) {
             list-style-type: lower-roman;
           }
+          /* stylelint-enable */
         }
       }
     }
