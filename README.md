@@ -4,9 +4,9 @@
   This is project combines UCLA Design System and custom front end development for UCLA CMS systems like SiteDen.
 </p>
 
-<!-- <a  href="https://stackblitz.com/github/storybookjs/sandboxes/tree/next/html-vite/default-js/after-storybook?preset=node=">
+<a  href="https://stackblitz.com/github/ucla-dev/siteden-storybook">
   View it in Stackblitz
-</a> -->
+</a>
 
 <h3>Start the Storybook</h3>
 
